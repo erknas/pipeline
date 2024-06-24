@@ -30,6 +30,6 @@ func sq(in <-chan int) <-chan int {
 
 func main() {
 	for num := range sq(gen(1, 2, 3, 4, 5, 6, 7, 8, 9)) {
-		fmt.Println(num)
+		fmt.Println(num) // 1 4 9 16 25 36 49 64 81
 	}
 }
